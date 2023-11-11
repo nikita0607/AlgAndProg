@@ -1,0 +1,4 @@
+\babel@toc {russian}{}\relax 
+\contentsline {section}{Задания}{1}{section*.2}%
+\contentsline {section}{Листинг программ}{2}{section*.3}%
+\contentsline {section}{Тесты}{3}{section*.4}%
