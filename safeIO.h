@@ -94,7 +94,6 @@ float *_enterFloats(int count, float min_limit, float max_limit) {
         else
             nums[i] = (float)input;
     }
-    printf("RETURN!");
 
     return nums;
 }
