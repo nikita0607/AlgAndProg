@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1699284672 "l3.tex" "l3.pdf" "l3" 1699284673 2
+["pdflatex"] 1699832706 "l3.tex" "l3.pdf" "l3" 1699832706 2
   "/Users/nikitapyrlicanu/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx0500.tfm" 1699115223 3320 a430f046d61f34970b99e53711dc6a65 ""
   "/Users/nikitapyrlicanu/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx0700.tfm" 1699115221 3328 d6a760976be2c5546586233212eda387 ""
   "/Users/nikitapyrlicanu/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1000.tfm" 1699113414 3300 6abb8e321227ead2a8e929e5abc72bd3 ""
@@ -31,7 +31,6 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb" 1248133631 33366 60462f3d16c3d0f024f1f856e64b09cd ""
-  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb" 1215737283 145408 43d44302ca7d82d487f511f83e309505 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb" 1215737283 140176 d4962f948b4cc0adf4d3dde77a128c95 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb" 1215737283 135942 859a90cad7494a1e79c94baf546d7de5 ""
@@ -118,10 +117,10 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1699113243 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1699113227 7883461 fbdf894e9d41a916bee6c0373a87a7a7 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "l3.aux" 1699284673 2700 2cdb38d069f4349946d1c92f9ac42c52 "pdflatex"
-  "l3.out" 1699284673 2766 6da41920154099481cc35e23fd36b3f9 "pdflatex"
-  "l3.tex" 1699284672 22510 763907e688575f43dc7852934f805d58 ""
-  "l3.toc" 1699284673 1296 6dc23233232081acbbe4a7247aca2709 "pdflatex"
+  "l3.aux" 1699832706 2700 2cdb38d069f4349946d1c92f9ac42c52 "pdflatex"
+  "l3.out" 1699832706 2766 6da41920154099481cc35e23fd36b3f9 "pdflatex"
+  "l3.tex" 1699832702 23105 27b17835651aaab7c5e9916b6d035090 ""
+  "l3.toc" 1699832706 1296 6dc23233232081acbbe4a7247aca2709 "pdflatex"
   (generated)
   "l3.aux"
   "l3.log"

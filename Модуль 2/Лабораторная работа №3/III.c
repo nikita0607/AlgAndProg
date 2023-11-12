@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <safeIO.h>
+#include "../../safeIO.h"
 #define lmax 10
 
 int findRep(int n, int *arr, int* reps, int* repc) {

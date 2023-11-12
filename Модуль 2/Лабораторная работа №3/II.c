@@ -1,26 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <safeIO.h>
+#include "../../safeIO.h"
 #include <limits.h>
 
 #define lmax 10
 
 int H(int n, int m, int b[][lmax]) {
-    int max,  min = INT_MAX;
+    int max, min = INT_MAX;
 
     for (int *uj=*b; uj<(*b)+m; uj++) {
         max = *uj;
-        for (int *ui=uj+lmax; ui<b[n-1]+m; ui+=lmax) {
-            if (abs(*ui) > abs(max))
-                max = *ui;
-            printf("%d\n", *ui);
-        }
+        for (int *ui=uj+lmax; ui<b[n-1]+m; ui+=lmax)
+            if (abs(*ui) > max)
+                max = abs(*ui);
 
-        if (abs(max) < abs(min))
+        if (max < min)
             min = max;
     }
 
-    return abs(min);
+    return min;
 }
 
 int main() {

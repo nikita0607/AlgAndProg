@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.4)  6 NOV 2023 18:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.4)  13 NOV 2023 02:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -796,7 +796,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.250 
+l.248 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -804,7 +804,7 @@ you left one out. Proceed, with fingers crossed.
 ! Display math should end with $$.
 <to be read again> 
                    \tex_par:D 
-l.250 
+l.248 
       
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
@@ -812,7 +812,7 @@ So I shall assume that you typed `$$' both times.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.252 \begin{array}{l}
+l.250 \begin{array}{l}
                       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -820,7 +820,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.256 \end{array}
+l.254 \end{array}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -835,7 +835,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.257 \]
+l.255 \]
         \\
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -844,7 +844,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.257 \]
+l.255 \]
         \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -855,20 +855,20 @@ my insertion and my current dilemma will both disappear.
 ! Display math should end with $$.
 <to be read again> 
                    \endgroup 
-l.257 \]
+l.255 \]
         \\
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--258
+Underfull \hbox (badness 10000) in paragraph at lines 255--256
 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.262 
+l.260 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -876,7 +876,7 @@ you left one out. Proceed, with fingers crossed.
 ! Display math should end with $$.
 <to be read again> 
                    \tex_par:D 
-l.262 
+l.260 
       
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
@@ -884,15 +884,31 @@ So I shall assume that you typed `$$' both times.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.264 \begin{array}{l}
+l.262 \begin{array}{l}
                       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
+! Missing \right. inserted.
+<inserted text> 
+                \right .
+l.275         \end{array}\\
+                           
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra \right.
+l.277     \right.
+                 \\
+I'm ignoring a \right that had no matching \left.
+
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.279 \end{array}
+l.278 \end{array}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -907,7 +923,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.280 \]
+l.279 \]
         \\
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -916,7 +932,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.280 \]
+l.279 \]
         \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -927,20 +943,20 @@ my insertion and my current dilemma will both disappear.
 ! Display math should end with $$.
 <to be read again> 
                    \endgroup 
-l.280 \]
+l.279 \]
         \\
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.298 }
+l.297 }
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -948,20 +964,20 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.300 
+l.299 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 298--300
+Underfull \hbox (badness 10000) in paragraph at lines 297--299
 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.317 }
+l.316 }
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -969,20 +985,20 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.319 
+l.318 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 317--319
+Underfull \hbox (badness 10000) in paragraph at lines 316--318
 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.325 }
+l.324 }
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -990,7 +1006,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.326 
+l.325 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1012,28 +1028,9 @@ l.336 }
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-! Extra }, or forgotten $.
-\fbox  ...x {\color@begingroup \kern \fboxsep {#1}
-                                                  \kern \fboxsep \color@endg...
-l.336 }
-       \\
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.336 }
-       \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
 l.336 }
        \\
 I've inserted something that you may have forgotten.
@@ -1652,7 +1649,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.609 \subsectionS
+l.610 \subsectionS
                   {Задание II}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1675,7 +1672,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.654 \subsectionS
+l.652 \subsectionS
                   {Задание III}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1733,7 +1730,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.878 \begin{array}{ll}
+l.898 \begin{array}{ll}
                        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1741,7 +1738,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.887 }
+l.907 }
         &
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1749,7 +1746,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \endtemplate 
-l.887 }
+l.907 }
         &
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1760,7 +1757,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.887 }
+l.907 }
         &
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1768,7 +1765,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.887 }
+l.907 }
         &
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1779,7 +1776,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.887 }
+l.907 }
         &
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1787,7 +1784,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \endtemplate 
-l.887 }
+l.907 }
         &
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1798,7 +1795,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.887 }
+l.907 }
         &
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1806,7 +1803,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.887 }
+l.907 }
         &
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1817,7 +1814,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.887 }
+l.907 }
         &
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1825,7 +1822,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \endtemplate 
-l.887 }
+l.907 }
         &
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1836,7 +1833,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.887 }
+l.907 }
         &
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1844,7 +1841,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.887 }
+l.907 }
         &
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1855,7 +1852,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.887 }
+l.907 }
         &
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1863,7 +1860,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \endtemplate 
-l.887 }
+l.907 }
         &
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1874,7 +1871,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.887 }
+l.907 }
         &
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1882,7 +1879,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.887 }
+l.907 }
         &
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1893,7 +1890,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.906 \end{array}
+l.927 \end{array}
                  \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1902,7 +1899,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 878--907
+Underfull \hbox (badness 10000) in paragraph at lines 898--928
 
  []
 
@@ -1919,10 +1916,10 @@ Package rerunfilecheck Info: File `l3.out' has not changed.
 (rerunfilecheck)             Checksum: 6DA41920154099481CC35E23FD36B3F9;2766.
  ) 
 Here is how much of TeX's memory you used:
- 15256 strings out of 476025
- 230198 string characters out of 5790017
- 2235388 words of memory out of 5000000
- 35181 multiletter control sequences out of 15000+600000
+ 15283 strings out of 476025
+ 230607 string characters out of 5790017
+ 2247388 words of memory out of 5000000
+ 35187 multiletter control sequences out of 15000+600000
  523241 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,32n,76p,407b,2024s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1935,17 +1932,16 @@ ocal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loca
 l/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
 /texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/t
 exlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/loca
-l/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/
-local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/lo
-cal/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/loca
-l/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/
-texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/te
-xlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texl
-ive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on l3.pdf (14 pages, 282633 bytes).
+l/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/
+texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/te
+xlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texl
+ive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texliv
+e/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/
+2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on l3.pdf (14 pages, 280744 bytes).
 PDF statistics:
- 628 PDF objects out of 1000 (max. 8388607)
- 573 compressed objects within 6 object streams
- 329 named destinations out of 1000 (max. 500000)
+ 648 PDF objects out of 1000 (max. 8388607)
+ 595 compressed objects within 6 object streams
+ 350 named destinations out of 1000 (max. 500000)
  153 words of extra memory for PDF output out of 10000 (max. 10000000)
 

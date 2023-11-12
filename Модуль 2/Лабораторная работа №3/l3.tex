@@ -233,10 +233,8 @@ I. См. формулу в задании\\\\
 II. См. формулу в задании
 \begin{flalign*}
     \text{III. } &k\text{ - длинна массива A' (A после удаления повторов)}&\\
-    &\forall i=\overline{0,n-1} \; \exists j=\overline{0,k-1} : 
-    A[i] = A'[j]&\\
-    &\forall i=\overline{0,k-1} \; \nexists j=\overline{0,n-1} : 
-    i \neq j \andR A'[i] = A[j]&
+    &\forall i=\overline{0,n-1} : \exists l=\overline{0,n-1}:i \neq l \andR A[i]=A[l] \quad \exists j=\overline{0,k-1} : 
+    A[i] = A'[j]&
 \end{flalign*}
 
 
@@ -270,11 +268,12 @@ II. См. формулу в задании
             \left\{
                 \begin{array}{l}
                     \text{для } i=\overline{0,m-1}\\
-                    max = B[i, j], \text{ если } B[i, j] > max
+                    max = |B[i, j]|, \text{ если } |B[i, j]| > max
                 \end{array}
             \right.\\
-            min = max, \text{ если } max > min
-        \end{array}
+            min = max, \text{ если } max > min\\
+        \end{array}\\
+        \text{вернуть min}
     \right.\\
 \end{array}
 \]\\
@@ -330,9 +329,10 @@ II. См. формулу в задании
 \subsectionS{Задание I}
 
 \fbox{
-\mathL{.}{.}{
-    \text{Task I}.\\
-}
+\begin{array}{l}
+    \text{Task I} \\
+    \text{Enter } x_1, x_2, x_3, y_1, y_2, y_3 \text{ such that } x_1 \leq x_2 \leq x_3
+\end{array}
 }\\
 \mathL{\{}{\}}{
     \fbox{<x_1> <x_2> <x_3> <y_1> <y_2> <y_3>}
@@ -573,10 +573,9 @@ A = \{\ll A[1] \gg, ..., \ll A[k] \gg\}
 \subsectionS{Задание I}
 \begin{lstlisting}[language=C]
 #include <stdio.h>
-#include "safeIO.h"
+#include "../../safeIO.h"
 
-
-float f(int x1, int x2, int x3, int y1, int y2, int y3, int x) {
+float f(float x1, float x2, float x3, float y1, float y2, float y3, float x) {
     if (x1 <= x && x < x2) {
         return (float)y1 + ((float)(x-x1) / (x2-x1))*(y2-y1);
     }
@@ -585,21 +584,23 @@ float f(int x1, int x2, int x3, int y1, int y2, int y3, int x) {
         return (float)y2 + ((float)(x-x2) / (x3-x1))*(y3-y2);
     }
 
-    return (float)y3;
+    return y3;
 }
-
 
 int main() {
     printf("Task I.\n");
-    int x1, x2, x3, y1, y2, y3, x;
-    
-    printf("Enter x1, x2, x3, y1, y2, y3:\n");
-    enterInts(6, &x1, &x2, &x3, &y1, &y2, &y3);
+    float x1, x2, x3, y1, y2, y3, x;
+
+
+    do {
+        printf("Enter x1, x2, x3, y1, y2, y3:\n");
+        enterFloats(6, &x1, &x2, &x3, &y1, &y2, &y3);
+    } while(!(x1 <= x2 && x2 <=  x3));
     
     for(;;) {
-        printf("Enter x such that x1 <= x <= x3")
-        enterIntRanged(&x, x1, x3);
-        printf("f(%d) = %f", x, f(x1,x2,x3,y1,y2,y3, x));
+        printf("Enter x such that x1 <= x <= x3:\n");
+        enterFloatRanged(&x, x1, x3);
+        printf("f(%f) = %f\n", x, f(x1,x2,x3,y1,y2,y3, x));
     }
     
 
@@ -608,29 +609,27 @@ int main() {
 \end{lstlisting}\\
 \subsectionS{Задание II}
 \begin{lstlisting}[language=C]
-#include <stdio.h>
+##include <stdio.h>
 #include <stdlib.h>
-#include "safeIO.h"
+#include "../../safeIO.h"
 #include <limits.h>
 
 #define lmax 10
 
 int H(int n, int m, int b[][lmax]) {
-    int max,  min = INT_MAX;
+    int max, min = INT_MAX;
 
     for (int *uj=*b; uj<(*b)+m; uj++) {
         max = *uj;
-        for (int *ui=uj+lmax; ui<b[n-1]+m; ui+=lmax) {
-            if (abs(*ui) > abs(max))
-                max = *ui;
-            printf("%d\n", *ui);
-        }
+        for (int *ui=uj+lmax; ui<b[n-1]+m; ui+=lmax)
+            if (abs(*ui) > max)
+                max = abs(*ui);
 
-        if (abs(max) < abs(min))
+        if (max < min)
             min = max;
     }
 
-    return abs(min);
+    return min;
 }
 
 int main() {
@@ -639,7 +638,7 @@ int main() {
     int n, m;
 
     printf("Enter n, m such that 1 <= n, m <= %d:\n", lmax);
-    enterIntsRanged(2, 1, INT_MAX, &n, &m);
+    enterIntsRanged(1, lmax, 2, &n, &m);
 
     printf("Enter matrix %dx%d:\n", n, m);
     for (int i=0; i<n; i++) {
@@ -649,44 +648,44 @@ int main() {
 
     printf("H = %d", H(n, m, b));
 }
-
 \end{lstlisting}\\
 \subsectionS{Задание III}
 \begin{lstlisting}[language=C]
 #include <stdio.h>
-#include <safeIO.h>
+#include "../../safeIO.h"
 #define lmax 10
 
 int findRep(int n, int *arr, int* reps, int* repc) {
-    int bn=0;
-    int j;
-    for (int i=0; i<n; i++) {
-        for (j=0; j<bn && reps[j] != arr[i]; j++);
+    int *bn=reps;
+    int *j;
+    for (int *i=arr; i<arr+n; i++) {
+        for (j=reps; j<bn && *j != *i; j++);
 
         if (j == bn) {
-            reps[bn] = arr[i];
-            repc[bn] = 1;
+            *bn = *i;
+            *(repc-reps+bn) = 1;
             bn++;
         }
         else {
-            repc[j]++;
+            (*(repc-reps+j))++;
         }
     }
 
-    return bn;
+    return (int)(bn-reps);
 }
 
 int delNonRep(int n, int *a, int cl_arr_len, int *reps, int *repc) {
-    int j=0;
-    for (int i=0; i<cl_arr_len; i++) {
-        if (repc[i] == 1) {
-            while(a[j] != reps[i]) j++;
-            for (int l=j+1; l<n; l++) {
-                a[l-1] = a[l];
+    int *j=a;
+    for (int *i=reps; i<reps+cl_arr_len; i++) {
+        if (*(repc-reps+i) == 1) {
+            while(*j != *i) j++;
+            for (int *l=j+1; l<a+n; l++) {
+                *(l-1) = *l;
             }
             n--;
         }
     }
+    
     return n;
 }
 
@@ -704,11 +703,12 @@ int main() {
 
     int cl_arr_len = findRep(n, a, reps, repc);
     int k = delNonRep(n, a, cl_arr_len, reps, repc);
-    
+
     if (k == n) {
-    	printf("Nothing to delete!");
-	return 0;
-     }
+        printf("Nothing to change!");
+        return 0;
+    }
+  
     
     printf("A = ");
     printIntArray(k, a);
@@ -765,7 +765,7 @@ void enterInt(int *dir) {
 void enterInts(int count, ...) {
     va_list arg;
     va_start(arg, count);
-
+    
     int *nums = _enterInts(count, INT_MIN, INT_MAX);
     for (int i=0; i<count; i++)
         *va_arg(arg, int*) = nums[i];
@@ -777,7 +777,7 @@ void enterIntsRanged(int minLimit, int maxLimit, int count, ...) {
     va_list arg;
     va_start(arg, count);
     int *nums = _enterInts(count, minLimit, maxLimit);
-    for (int i=0; i<count; i++)
+    for (int i=0; i<count; i++) 
         *va_arg(arg, int*) = nums[i];
     free(nums);
     va_end(arg);
@@ -788,11 +788,11 @@ void enterIntArrayRanged(int *ptr, int minLimit, int maxLimit, int len) {
     for (int i=0; i<len; i++)
         ptr[i] = nums[i];
     free(nums);
-
+    
 }
 
 void enterIntArray(int *ptr, int len) {
-    enterIntArrayRanged(ptr, len, INT_MIN, INT_MAX);
+    enterIntArrayRanged(ptr, INT_MIN, INT_MAX, len);
 }
 
 
@@ -814,7 +814,6 @@ float *_enterFloats(int count, float min_limit, float max_limit) {
         else
             nums[i] = (float)input;
     }
-    printf("RETURN!");
 
     return nums;
 }
@@ -871,6 +870,27 @@ void printIntArray(int len, int *arr) {
         printf("%d, ", arr[i]);
     printf("%d}", arr[len-1]);
 }
+
+void enterString(char *ptr, int len) {
+    clearBuffer();
+
+    char sym;
+    for (int i=0; i<len-1; i++) {
+        scanf("%c", &sym);
+        if (sym == '\n') {
+            ptr[i] = '\0';
+            return;
+        }
+        ptr[i] = sym;
+    }
+    ptr[len-1] = '\0';
+}
+
+void printString(char *ptr, int len) {
+    for (int i=0; i<len; i++) 
+        printf("%c", ptr[i]);
+    
+}
 \end{lstlisting}
 
 \pagebreak
@@ -891,6 +911,7 @@ void printIntArray(int len, int *arr) {
     \hline
     \text{№} & \text{Входные данные} & \text{Выходные данные}\\\hline
     1 & \tabulart{n=2,\;m=2\;\\B=\;[\;5,\;2]\\\;\;\;\;\;[10, 1]} & H = 2\\\hline
+    2 & \tabulart{n=1,\;m=2\\B=\;[1, 2]} & H = 1\\\hline
 \end{array} \\
 }\\[15ex]
 \es{

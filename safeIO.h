@@ -72,7 +72,7 @@ void enterIntArrayRanged(int *ptr, int minLimit, int maxLimit, int len) {
 }
 
 void enterIntArray(int *ptr, int len) {
-    enterIntArrayRanged(ptr, len, INT_MIN, INT_MAX);
+    enterIntArrayRanged(ptr, INT_MIN, INT_MAX, len);
 }
 
 
