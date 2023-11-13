@@ -152,11 +152,10 @@ void printIntArray(int len, int *arr) {
 }
 
 void enterString(char *ptr, int len) {
-    clearBuffer();
-
     char sym;
     for (int i=0; i<len-1; i++) {
-        scanf("%c", &sym);
+        sym = getchar();
+        printf("%c", sym);
         if (sym == '\n') {
             ptr[i] = '\0';
             return;
