@@ -155,7 +155,6 @@ void enterString(char *ptr, int len) {
     char sym;
     for (int i=0; i<len-1; i++) {
         sym = getchar();
-        printf("%c", sym);
         if (sym == '\n') {
             ptr[i] = '\0';
             return;
@@ -166,7 +165,7 @@ void enterString(char *ptr, int len) {
 }
 
 void printString(char *ptr, int len) {
-    for (int i=0; i<len; i++) 
+    for (int i=0; i<len && ptr[i] != '\0'; i++) 
         printf("%c", ptr[i]);
     
 }

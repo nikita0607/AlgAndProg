@@ -8,16 +8,17 @@
 #define FILE_NAME_SIZE 10
 // Variant(6, 6) 
 
-int isrus(char sym) {
-    return sym<0;
+int isrus(unsigned char sym) {
+    printf("Sym=%c, chr=%d\n", sym, sym);
+    return sym>=208;
 }
 
-void delstrind(char *str, int ind) {
+void delstrind(unsigned char *str, int ind) {
     for (int i=ind; i<STRING_SIZE-1; i++)
         str[i] = str[i+1];
 }
 
-void delrus(char str[STRING_SIZE]) {
+void delrus(unsigned char *str) {
     for (int i=0; i<STRING_SIZE && str[i] != '\0'; i++) {
         if (isrus(str[i])) {
             delstrind(str, i);
@@ -27,12 +28,11 @@ void delrus(char str[STRING_SIZE]) {
 }
 
 int main() {
-    setlocale(LC_ALL, "Russian");
+    setlocale(LC_ALL, ".1251");
     char name[FILE_NAME_SIZE];
     printf("Enter input file name:\n");
     enterString(name, FILE_NAME_SIZE);
-    printf("%s", name);
-
+    
     FILE *f = fopen(name, "r");
     printf("Enter output file name\n");
     enterString(name, FILE_NAME_SIZE);
@@ -43,7 +43,7 @@ int main() {
         return 0;
     }
 
-    char str[STRING_SIZE];
+    unsigned char str[STRING_SIZE];
     int k;
     do {
         k = fscanf(f, "%s", str);
